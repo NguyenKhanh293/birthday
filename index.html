@@ -2,15 +2,19 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Chúc mừng sinh nhật!</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <div class="card">
-    <h1>🎂 Chúc mừng sinh nhật!</h1>
-    <button onclick="showCake()">Xem bánh</button>
-    <div id="cake" style="display:none;">🍰 Đây là bánh sinh nhật của bạn!</div>
+  <canvas id="fireworksCanvas"></canvas>
+
+  <div class="center">
+    <img src="images/gift-box.png" alt="Hộp quà" id="gift" onclick="revealCard()">
+    <img src="images/greeting-card.png" alt="Thiệp chúc mừng" id="card">
   </div>
-  <script src="script.js"></script>
+
+  <script src="scripts/script.js"></script>
+  <script src="scripts/fireworks.js"></script>
 </body>
 </html>
